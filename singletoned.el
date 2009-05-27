@@ -10,6 +10,18 @@
 (global-set-key (kbd "s-/") 'comment-or-uncomment-region-or-line-or-blank-line)
 (global-set-key (kbd "s-r") 'revbufs)
 (global-set-key (kbd "s-C-<return>") 'break-and-indent-brackets)
+(global-set-key (kbd "s-h") 'help-command)
+
+
+;; Some Yegge-isations
+(global-set-key (kbd "M-h") 'help-command)
+(global-set-key (kbd "C-h") 'backward-delete-char)
+(global-set-key (kbd "C-w") 'backward-kill-word)
+(global-set-key (kbd "C-x C-k") 'kill-region)
+(global-set-key (kbd "C-c C-k") 'kill-region)
+(global-set-key (kbd "C-x C-m") 'execute-extended-command)
+(global-set-key (kbd "C-c C-m") 'execute-extended-command)
+
 
 ;; Some lovely skeleton stuff, courtesy of cmarcelo
 ;; http://cmarcelo.wordpress.com/2008/04/26/a-little-emacs-experiment/
