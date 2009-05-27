@@ -22,6 +22,9 @@
 (global-set-key (kbd "C-x C-m") 'execute-extended-command)
 (global-set-key (kbd "C-c C-m") 'execute-extended-command)
 
+;; Set alt-3 to insert a # for general uk mac compatibility
+(global-unset-key (kbd "M-3"))
+(global-set-key (kbd "M-3") '(lambda() (interactive) (insert-string "#")))
 
 ;; Some lovely skeleton stuff, courtesy of cmarcelo
 ;; http://cmarcelo.wordpress.com/2008/04/26/a-little-emacs-experiment/
