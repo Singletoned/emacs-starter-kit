@@ -50,6 +50,9 @@
 (global-unset-key (kbd "M-3"))
 (global-set-key (kbd "M-3") '(lambda() (interactive) (insert-string "#")))
 
+(setq skeleton-pair t)
+(setq skeleton-pair-on-word t) ; apply skeleton trick even in front of a word.
+
 ;; Some lovely skeleton stuff, courtesy of cmarcelo
 ;; http://cmarcelo.wordpress.com/2008/04/26/a-little-emacs-experiment/
 
