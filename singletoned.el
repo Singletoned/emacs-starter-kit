@@ -8,6 +8,8 @@
 (require 'centered-cursor-mode)
 (global-centered-cursor-mode t)
 
+(global-linum-mode t)
+
 (require 'maxframe)
 (x-maximize-frame)
 (split-window-horizontally)
