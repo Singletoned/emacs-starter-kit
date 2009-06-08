@@ -5,6 +5,12 @@
 (defun call-raise-frame ()
   (raise-frame))
 
+(require 'maxframe)
+(x-maximize-frame)
+(split-window-horizontally)
+(switch-to-buffer-other-window nil)
+(other-window 1)
+
 ;; Shortcuts
 
 (global-set-key (kbd "M-p") 'backward-paragraph)
