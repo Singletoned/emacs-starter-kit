@@ -5,6 +5,9 @@
 (defun call-raise-frame ()
   (raise-frame))
 
+(require 'centered-cursor-mode)
+(global-centered-cursor-mode t)
+
 (require 'maxframe)
 (x-maximize-frame)
 (split-window-horizontally)
