@@ -20,6 +20,9 @@
 (switch-to-buffer-other-window nil)
 (other-window 1)
 
+(global-hl-line-mode)
+(setq hl-line-sticky-flag nil)
+
 ;; Shortcuts
 
 (global-set-key (kbd "M-p") 'backward-paragraph)
