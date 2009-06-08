@@ -1,3 +1,9 @@
+;; Settings
+
+(server-start)
+(add-hook 'server-visit-hook 'call-raise-frame)
+(defun call-raise-frame ()
+  (raise-frame))
 
 ;; Shortcuts
 
