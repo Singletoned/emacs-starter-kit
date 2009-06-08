@@ -5,6 +5,10 @@
 (defun call-raise-frame ()
   (raise-frame))
 
+
+(setq mouse-wheel-scroll-amount '(1 ((shift)) (control)))
+(setq mouse-wheel-progressive-speed t)
+
 (require 'centered-cursor-mode)
 (global-centered-cursor-mode t)
 
