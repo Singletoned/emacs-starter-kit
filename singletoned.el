@@ -11,6 +11,7 @@
 
 (require 'centered-cursor-mode)
 (global-centered-cursor-mode t)
+(setq ccm-recenter-at-end-of-file t)
 
 (global-linum-mode t)
 
