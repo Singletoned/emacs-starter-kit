@@ -13,13 +13,24 @@
 (global-centered-cursor-mode t)
 (setq ccm-recenter-at-end-of-file t)
 
-(global-linum-mode t)
+
+(defun fix-window-horizontal-size (width)
+  "Set the window's size to 80 (or prefix arg WIDTH) columns wide."
+  (interactive "P")
+  (enlarge-window (- (or width 80) (window-width)) 'horizontal))
+
+(require 'sr-speedbar)
+(global-set-key (kbd "s-b") 'sr-speedbar-toggle)
+
 
 (require 'maxframe)
-(x-maximize-frame)
+(maximize-frame)
 (split-window-horizontally)
+(fix-window-horizontal-size 79)
 (switch-to-buffer-other-window nil)
-(other-window 1)
+(sr-speedbar-toggle)
+(fix-window-horizontal-size 79)
+(other-window 2)
 
 (global-hl-line-mode)
 (setq hl-line-sticky-flag nil)
